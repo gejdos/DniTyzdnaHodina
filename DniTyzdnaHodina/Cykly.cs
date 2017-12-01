@@ -60,7 +60,7 @@ namespace DniTyzdnaHodina
 
         public static void CyklusForContinue()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 15; i++)
             {
                 //zvysok po deleni
                 int zvysok = i % 2;
