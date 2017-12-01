@@ -84,7 +84,21 @@ namespace DniTyzdnaHodina
             hodnota2 = hodnota1;
             hodnota2++;
 
-            Console.WriteLine(hodnota1 + ", " + hodnota2);
+            //Console.WriteLine(hodnota1 + ", " + hodnota2);
+
+            Auto auto1 = new Auto();
+            auto1.Farba = "cervena";
+            Auto auto2 = auto1;
+            auto2.Farba = "cierna";
+
+            Console.WriteLine(auto1.Farba);
+            Console.WriteLine(auto2.Farba);
+            
+        }
+
+        public static void PrefarbiAuto(Auto auto)
+        {
+            auto.Farba = "biela";
         }
 
     }

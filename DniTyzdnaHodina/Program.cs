@@ -28,9 +28,16 @@ namespace DniTyzdnaHodina
              int cislo = int.Parse(Console.ReadLine());
 
             Cykly.CyklusFor(cislo);
-            Cykly.CyklusForContinue();*/
-            Cykly.HodnotVsReferencia();
+            Cykly.CyklusForContinue();
+            Cykly.HodnotVsReferencia();*/
+
+            Auto autoPovodne = new Auto();
+            autoPovodne.Farba = "cierna";
+
+            Cykly.PrefarbiAuto(autoPovodne);
+            Console.WriteLine(autoPovodne.Farba);
             Console.ReadKey();
+
         }
     }
 }
