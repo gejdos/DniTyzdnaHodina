@@ -11,6 +11,15 @@ namespace DniTyzdnaHodina
         static void Main(string[] args)
         {
 
+            while (true)
+            {
+                Console.WriteLine("Zadaj den");
+                string den = Console.ReadLine();
+
+                DniVTyzdni.VypisDenTyzdna(den, true);
+
+            }
+
         }
     }
 }
