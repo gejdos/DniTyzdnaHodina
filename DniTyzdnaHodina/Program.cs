@@ -50,6 +50,8 @@ namespace DniTyzdnaHodina
             Cykly.ZvysOJednotku(ref aPovodna);
             Console.WriteLine(aPovodna);
 
+            //struct - hodnotovy typ
+
 
             Console.ReadKey();
 

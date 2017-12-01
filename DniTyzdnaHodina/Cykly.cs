@@ -111,7 +111,12 @@ namespace DniTyzdnaHodina
             a++;
         }
 
-
+        //vracia aj nieco ine okrem bool
+        public static bool Otoc(bool vstup, out int b)
+        {
+            b = 10;
+            return !vstup;
+        }
 
     }
 }
