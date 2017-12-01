@@ -11,16 +11,20 @@ namespace DniTyzdnaHodina
         static void Main(string[] args)
         {
 
-            while (true)
-            {
-                Console.WriteLine("Zadaj den");
-                string den = Console.ReadLine();
+            /*  while (true)
+              {
+                  Console.WriteLine("Zadaj den");
+                  string den = Console.ReadLine();
 
-                DniVTyzdni.VypisDenTyzdna(cisloDna: den);
-                DniVTyzdni.VypisDenTyzdna(cisloDna: den, nedelaJePrva: true);
+                  DniVTyzdni.VypisDenTyzdna(cisloDna: den);
+                  DniVTyzdni.VypisDenTyzdna(cisloDna: den, nedelaJePrva: true);
 
-            }
-
+              }
+              */
+            //Cykly.CyklusWhile();
+            //Cykly.CyklusDoWhile();
+            Cykly.CyklusFor();
+            Console.ReadKey();
         }
     }
 }
