@@ -35,7 +35,7 @@ namespace DniTyzdnaHodina
             autoPovodne.Farba = "cierna";
 
             Cykly.PrefarbiAuto(autoPovodne);
-            Console.WriteLine(autoPovodne.Farba);
+            //Console.WriteLine(autoPovodne.Farba);
 
             //z "a-cka" urobime referencny typ - "boxing"
             int a = 10;
@@ -43,15 +43,18 @@ namespace DniTyzdnaHodina
             object o1 = o;
             o = (int)o + 1;
             //Console.WriteLine(o);
-
-            int aPovodna = 10;
-            Cykly.ZvysOJednotku(aPovodna);
-            Console.WriteLine(aPovodna);
-            Cykly.ZvysOJednotku(ref aPovodna);
-            Console.WriteLine(aPovodna);
-
+            /*
+                        int aPovodna = 10;
+                        Cykly.ZvysOJednotku(aPovodna);
+                        Console.WriteLine(aPovodna);
+                        Cykly.ZvysOJednotku(ref aPovodna);
+                        Console.WriteLine(aPovodna);
+                        */
             //struct - hodnotovy typ
 
+            Pole pole = new Pole();
+            pole.VypisPole();
+            pole.VypisPoleForEach();
 
             Console.ReadKey();
 
