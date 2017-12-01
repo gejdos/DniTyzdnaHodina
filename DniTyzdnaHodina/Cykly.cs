@@ -32,7 +32,7 @@ namespace DniTyzdnaHodina
 
         public static void CyklusFor()
         {
-            /*  for (int i = 0; i < 10; i = i + 2)
+            /*  for (int i = 0; i < 10; i++)
               {
                   Console.WriteLine(i);
               }*/
@@ -41,7 +41,6 @@ namespace DniTyzdnaHodina
             {
                 Console.WriteLine(i);
             }
-
         }
            
            
