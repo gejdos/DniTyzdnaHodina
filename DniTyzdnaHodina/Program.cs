@@ -53,8 +53,10 @@ namespace DniTyzdnaHodina
             //struct - hodnotovy typ
 
             Pole pole = new Pole();
-            pole.VypisPole();
-            pole.VypisPoleForEach();
+            //pole.VypisPoleFor();
+            //pole.VypisPoleForEach();
+            pole.NaplnPole();
+            pole.VypisPoleFor();
 
             Console.ReadKey();
 

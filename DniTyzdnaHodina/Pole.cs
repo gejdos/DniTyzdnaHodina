@@ -11,7 +11,7 @@ namespace DniTyzdnaHodina
         //pole - vzdy referencny typ
         public int[] VnutornePole = new int[4] { 10, 4, 5, 6 };
 
-        public void VypisPole()
+        public void VypisPoleFor()
         {
             for (int i = 0; i < VnutornePole.Length; i++)
             {
@@ -25,6 +25,17 @@ namespace DniTyzdnaHodina
             {
                 Console.WriteLine(item);
             }
+        }
+
+        public void NaplnPole()
+        {
+            Random r = new Random();
+
+            for (int i = 0; i < VnutornePole.Length; i++)
+            {
+                VnutornePole[i] = r.Next(100);
+            }
+
         }
 
     }
