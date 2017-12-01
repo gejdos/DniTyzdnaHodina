@@ -24,10 +24,11 @@ namespace DniTyzdnaHodina
             //Cykly.CyklusWhile();
             //Cykly.CyklusDoWhile();
 
-            Console.WriteLine("zadaj pocet opakovani");
-            int cislo = int.Parse(Console.ReadLine());
-   
-            Cykly.CyklusFor(cislo);
+            /* Console.WriteLine("zadaj pocet opakovani");
+             int cislo = int.Parse(Console.ReadLine());
+
+             Cykly.CyklusFor(cislo);*/
+            Cykly.CyklusForContinue();
             Console.ReadKey();
         }
     }

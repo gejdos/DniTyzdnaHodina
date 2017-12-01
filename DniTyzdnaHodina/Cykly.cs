@@ -65,11 +65,8 @@ namespace DniTyzdnaHodina
                 //zvysok po deleni
                 int zvysok = i % 2;
 
-                if (zvysok != 0)
-                {
-                    //pokracuj s cyklom
-                    continue;
-                }
+                //pokracuj s cyklom
+                if (zvysok != 0) continue;
 
                 Console.WriteLine(i);
 
