@@ -36,6 +36,21 @@ namespace DniTyzdnaHodina
 
             Cykly.PrefarbiAuto(autoPovodne);
             Console.WriteLine(autoPovodne.Farba);
+
+            //z "a-cka" urobime referencny typ - "boxing"
+            int a = 10;
+            object o = a;
+            object o1 = o;
+            o = (int)o + 1;
+            //Console.WriteLine(o);
+
+            int aPovodna = 10;
+            Cykly.ZvysOJednotku(aPovodna);
+            Console.WriteLine(aPovodna);
+            Cykly.ZvysOJednotku(ref aPovodna);
+            Console.WriteLine(aPovodna);
+
+
             Console.ReadKey();
 
         }

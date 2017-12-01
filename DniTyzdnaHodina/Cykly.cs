@@ -101,5 +101,17 @@ namespace DniTyzdnaHodina
             auto.Farba = "biela";
         }
 
+        //nepredava hodnotu, ale referenciu
+        public static void ZvysOJednotku(ref int a)
+        {
+            a++;
+        }
+        public static void ZvysOJednotku(int a)
+        {
+            a++;
+        }
+
+
+
     }
 }
