@@ -43,6 +43,10 @@ namespace DniTyzdnaHodina
                         break;
                 }
             }
+            else
+            {
+                Console.WriteLine("Nespravny vstup");
+            }
 
         }
 
@@ -52,20 +56,16 @@ namespace DniTyzdnaHodina
 
             if (SkontrolujVstup(denTyzdna))
             {
-                if (denTyzdna > 0 && denTyzdna < 8)
+                if (nedelaJePrva)
                 {
-                    if (nedelaJePrva)
-                    {
-                        denTyzdna--;
-                    }
-
-                    VypisDenTyzdna(denTyzdna.ToString());
-
+                    denTyzdna--;
                 }
-                else
-                {
-                    Console.WriteLine("Nespravny vstup");
-                }
+
+                VypisDenTyzdna(denTyzdna.ToString());
+            }
+            else
+            {
+                Console.WriteLine("Nespravny vstup");
             }
 
         }
