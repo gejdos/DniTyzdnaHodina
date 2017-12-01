@@ -27,8 +27,9 @@ namespace DniTyzdnaHodina
             /* Console.WriteLine("zadaj pocet opakovani");
              int cislo = int.Parse(Console.ReadLine());
 
-             Cykly.CyklusFor(cislo);*/
-            Cykly.CyklusForContinue();
+            Cykly.CyklusFor(cislo);
+            Cykly.CyklusForContinue();*/
+            Cykly.HodnotVsReferencia();
             Console.ReadKey();
         }
     }

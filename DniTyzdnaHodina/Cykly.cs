@@ -72,6 +72,19 @@ namespace DniTyzdnaHodina
 
             }
 
+
+        }
+
+        public static void HodnotVsReferencia()
+        {
+            int hodnota1 = 6;
+
+            int hodnota2;
+
+            hodnota2 = hodnota1;
+            hodnota2++;
+
+            Console.WriteLine(hodnota1 + ", " + hodnota2);
         }
 
     }
