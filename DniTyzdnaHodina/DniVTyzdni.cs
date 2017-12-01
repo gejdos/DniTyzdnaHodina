@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DniTyzdnaHodina
 {
-    class Program
+    class DniVTyzdni
     {
-        static void Main(string[] args)
+        public static void VratDen()
         {
 
         }
