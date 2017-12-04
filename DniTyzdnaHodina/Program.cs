@@ -6,7 +6,6 @@ namespace DniTyzdnaHodina
     {
         static void Main(string[] args)
         {
-
             while (true)
             {
                 Console.WriteLine("Zadaj den");
