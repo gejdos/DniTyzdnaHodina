@@ -12,7 +12,7 @@ namespace DniTyzdnaHodina
                 Console.WriteLine("Zadaj den");
                 string den = Console.ReadLine();
 
-                //DniVTyzdni.VypisDenTyzdna(cisloDna: den);
+                DniVTyzdni.VypisDenTyzdna(cisloDna: den);                
                 DniVTyzdni.VypisDenTyzdna(cisloDna: den, nedelaJePrva: true);
 
                 //Console.ReadKey();
