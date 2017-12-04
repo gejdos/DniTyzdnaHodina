@@ -11,7 +11,7 @@ namespace DniTyzdnaHodina
         }
 
         public static void VypisDenTyzdna(string cisloDna, bool nedelaJePrva)
-        {            
+        {
             int denTyzdna = int.Parse(cisloDna);
 
             if (!SkontrolujVstup(denTyzdna)) return;
