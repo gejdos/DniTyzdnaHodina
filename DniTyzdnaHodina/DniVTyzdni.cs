@@ -6,59 +6,49 @@ namespace DniTyzdnaHodina
     class DniVTyzdni
     {
         public static void VypisDenTyzdna(string cisloDna)
-        {
-            StackTrace stackTrace = new StackTrace();
+        {        
+            VypisDenTyzdna(cisloDna, false);
+        }
+
+        public static void VypisDenTyzdna(string cisloDna, bool nedelaJePrva)
+        {            
             int denTyzdna = int.Parse(cisloDna);
-        
-            if (stackTrace.GetFrame(1).GetMethod().Name == "Main")
+
+            if (!SkontrolujVstup(denTyzdna)) return;
+
+            if (!nedelaJePrva)
             {
-                if (!SkontrolujVstup(denTyzdna)) return;
-            }
-            else
-            {
-                if (!SkontrolujVstup(denTyzdna + 1)) return;
+                denTyzdna++;
             }
 
             switch (denTyzdna)
             {
-                case 0:
-                case 7:
+                case 8:
+                case 1:
                     Console.WriteLine("Nedela");
                     break;
-                case 1:
+                case 2:
                     Console.WriteLine("Pondelok");
                     break;
-                case 2:
+                case 3:
                     Console.WriteLine("Utorok");
                     break;
-                case 3:
+                case 4:
                     Console.WriteLine("Streda");
                     break;
-                case 4:
+                case 5:
                     Console.WriteLine("Stvrtok");
                     break;
-                case 5:
+                case 6:
                     Console.WriteLine("Piatok");
                     break;
-                case 6:
+                case 7:
                     Console.WriteLine("Sobota");
                     break;
                 default:
                     Console.WriteLine("neznamy den");
                     break;
             }
-        }
-
-        public static void VypisDenTyzdna(string cisloDna, bool nedelaJePrva)
-        {
-            int denTyzdna = int.Parse(cisloDna);
-
-            if (nedelaJePrva)
-            {
-                denTyzdna--;
-            }
-
-            VypisDenTyzdna(denTyzdna.ToString());
         }
 
         /*public static bool SkontrolujVstup(int cisloDna)
