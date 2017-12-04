@@ -11,16 +11,17 @@ namespace DniTyzdnaHodina
         static void Main(string[] args)
         {
 
-            /*  while (true)
-              {
-                  Console.WriteLine("Zadaj den");
-                  string den = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Zadaj den");
+                string den = Console.ReadLine();
 
-                  DniVTyzdni.VypisDenTyzdna(cisloDna: den);
-                  DniVTyzdni.VypisDenTyzdna(cisloDna: den, nedelaJePrva: true);
+                DniVTyzdni.VypisDenTyzdna(cisloDna: den);
+                DniVTyzdni.VypisDenTyzdna(cisloDna: den, nedelaJePrva: true);
 
-              }
-              */
+                //Console.ReadKey();
+            }
+              
             //Cykly.CyklusWhile();
             //Cykly.CyklusDoWhile();
 
@@ -31,7 +32,7 @@ namespace DniTyzdnaHodina
             Cykly.CyklusForContinue();
             Cykly.HodnotVsReferencia();*/
 
-            Auto autoPovodne = new Auto();
+          /*  Auto autoPovodne = new Auto();
             autoPovodne.Farba = "cierna";
 
             Cykly.PrefarbiAuto(autoPovodne);
@@ -51,7 +52,7 @@ namespace DniTyzdnaHodina
                         Console.WriteLine(aPovodna);
                         */
             //struct - hodnotovy typ
-
+            /*
             Pole pole = new Pole();
             //pole.VypisPoleFor();
             //pole.VypisPoleForEach();
@@ -59,7 +60,7 @@ namespace DniTyzdnaHodina
             pole.VypisPoleFor();
 
             Console.ReadKey();
-
+            */
         }
     }
 }
