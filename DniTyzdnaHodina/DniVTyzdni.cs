@@ -16,10 +16,7 @@ namespace DniTyzdnaHodina
 
             if (!SkontrolujVstup(denTyzdna)) return;
 
-            if (!nedelaJePrva)
-            {
-                denTyzdna++;
-            }
+            if (!nedelaJePrva) denTyzdna++;
 
             switch (denTyzdna)
             {
