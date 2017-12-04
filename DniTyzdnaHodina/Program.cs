@@ -8,10 +8,10 @@ namespace DniTyzdnaHodina
         {
             while (true)
             {
-                Console.WriteLine("Zadaj den");
+                Console.WriteLine("Zadaj cislo dna");
                 string den = Console.ReadLine();
 
-                DniVTyzdni.VypisDenTyzdna(cisloDna: den);                
+                DniVTyzdni.VypisDenTyzdna(cisloDna: den);
                 DniVTyzdni.VypisDenTyzdna(cisloDna: den, nedelaJePrva: true);
 
                 //Console.ReadKey();
